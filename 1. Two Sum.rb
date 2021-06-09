@@ -1,4 +1,4 @@
-
+=begin
 #Brute Force Method - Time O(n^2), Space O(1)
 
 # @param {Integer[]} nums
@@ -12,8 +12,9 @@ def two_sum(nums, target)
         end
     end
 end  
+=end
 
-=begin
+
 #The Hash Table Solution - Time O(n), Space O(1)
 
 # @param {Integer[]} nums
@@ -27,7 +28,6 @@ def two_sum(nums, target, hash = {})
     hash[val] = i
     end
 end
-=end
 
 out = two_sum([3, 2, 4], 6)
 
