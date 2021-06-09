@@ -1,5 +1,5 @@
 =begin
-#Brute Force Method - Time O(n^2), Space O(1)
+# Brute Force Method - Time O(n^2), Space O(1)
 
 # @param {Integer[]} nums
 # @param {Integer} target
@@ -15,7 +15,7 @@ end
 =end
 
 
-#The Hash Table Solution - Time O(n), Space O(1)
+# The Hash Table Solution - Time O(n), Space O(1)
 
 # @param {Integer[]} nums
 # @param {Integer} target
