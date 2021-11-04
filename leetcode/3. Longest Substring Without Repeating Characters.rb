@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Given a string s, find the length of the longest
 # substring without repeating characters.
 
@@ -24,13 +26,13 @@ def length_of_longest_substring(s)
   lookup = {}
 
   s.each_char do |char|
-    if lookup[char] and lookup[char] >= left_pp
+    if lookup[char] && (lookup[char] >= left_pp)
       longest = [longest, right_pp - left_pp].max
       left_pp = lookup[char] + 1
     end
     lookup[char] = right_pp
     right_pp += 1
   end
-  
+
   [longest, right_pp - left_pp].max
 end
